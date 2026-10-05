@@ -1,0 +1,4 @@
+{
+  "description": "One searchable markdown note per idea/post (/notes/<post_id>.md) with frontmatter \u2014 Rocky's RAG memory of the board.",
+  "visibility": "POD"
+}

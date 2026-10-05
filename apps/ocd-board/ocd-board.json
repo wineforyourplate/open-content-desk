@@ -1,0 +1,6 @@
+{
+  "description": null,
+  "name": "ocd-board",
+  "public_slug": "${ocd_board_slug}",
+  "visibility": "PUBLIC"
+}

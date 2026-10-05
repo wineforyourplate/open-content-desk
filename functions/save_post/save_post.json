@@ -1,0 +1,48 @@
+{
+  "code": {
+    "$file": "code.py"
+  },
+  "config": null,
+  "description": "Create or update a post. Provide post_id to update an existing post, omit it to create a new one. Nested fields (blocks, perspectives, claim_check, tags, content_formats) are passed as JSON strings and parsed server-side.",
+  "icon_url": null,
+  "name": "save_post",
+  "permissions": {
+    "grants": [
+      {
+        "permission_ids": [
+          "datastore.record.read",
+          "datastore.table.read"
+        ],
+        "resource_name": "campaigns",
+        "resource_type": "datastore_table"
+      },
+      {
+        "permission_ids": [
+          "datastore.record.read",
+          "datastore.table.read"
+        ],
+        "resource_name": "products",
+        "resource_type": "datastore_table"
+      },
+      {
+        "permission_ids": [
+          "datastore.record.read",
+          "datastore.record.write",
+          "datastore.table.read"
+        ],
+        "resource_name": "posts",
+        "resource_type": "datastore_table"
+      },
+      {
+        "permission_ids": [
+          "folder.read",
+          "folder.write"
+        ],
+        "resource_name": "/notes",
+        "resource_type": "folder"
+      }
+    ]
+  },
+  "type": "API",
+  "visibility": "POD"
+}

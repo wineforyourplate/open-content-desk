@@ -1,0 +1,26 @@
+{
+  "profile_name": "Incomplete profile fixture",
+  "status": "draft",
+  "version": 1,
+  "founder_json": {
+    "name": "",
+    "role": "Content owner",
+    "company": "Lemma",
+    "audience": "",
+    "topics": [],
+    "audience_signals": [],
+    "tone_preferences": [],
+    "avoid": []
+  },
+  "product_json": {
+    "product_name": "Lemma",
+    "one_line_description": "",
+    "target_users": [],
+    "key_use_cases": [],
+    "features": [],
+    "allowed_claims": [],
+    "blocked_claims": [],
+    "proof_points": [],
+    "competitors_or_alternatives": []
+  }
+}

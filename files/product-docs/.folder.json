@@ -1,0 +1,4 @@
+{
+  "description": "Uploaded markdown context docs per product (/product-docs/<product_id>/*.md); read by the Writer when a product is tagged.",
+  "visibility": "POD"
+}

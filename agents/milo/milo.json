@@ -1,0 +1,110 @@
+{
+  "agent_runtime": null,
+  "description": "Milo \u2014 OCD's concise content operator. Captures, finds, organizes, shapes, and schedules the signed-in user's content through direct pod table access.",
+  "icon_url": null,
+  "input_schema": null,
+  "instruction": {
+    "$file": "instruction.md"
+  },
+  "metadata": null,
+  "name": "milo",
+  "output_schema": null,
+  "permissions": {
+    "grants": [
+      {
+        "permission_ids": [
+          "datastore.record.read",
+          "datastore.record.write",
+          "datastore.table.read"
+        ],
+        "resource_name": "campaigns",
+        "resource_type": "datastore_table"
+      },
+      {
+        "permission_ids": [
+          "datastore.record.read",
+          "datastore.table.read"
+        ],
+        "resource_name": "context_profile",
+        "resource_type": "datastore_table"
+      },
+      {
+        "permission_ids": [
+          "datastore.record.read",
+          "datastore.table.read"
+        ],
+        "resource_name": "skills",
+        "resource_type": "datastore_table"
+      },
+      {
+        "permission_ids": [
+          "datastore.record.read",
+          "datastore.table.read"
+        ],
+        "resource_name": "products",
+        "resource_type": "datastore_table"
+      },
+      {
+        "permission_ids": [
+          "datastore.record.read",
+          "datastore.record.write",
+          "datastore.table.read"
+        ],
+        "resource_name": "posts",
+        "resource_type": "datastore_table"
+      },
+      {
+        "permission_ids": [
+          "datastore.record.read",
+          "datastore.table.read"
+        ],
+        "resource_name": "commons_boards",
+        "resource_type": "datastore_table"
+      },
+      {
+        "permission_ids": [
+          "datastore.record.read",
+          "datastore.table.read"
+        ],
+        "resource_name": "commons_members",
+        "resource_type": "datastore_table"
+      },
+      {
+        "permission_ids": [
+          "datastore.record.read",
+          "datastore.record.write",
+          "datastore.table.read"
+        ],
+        "resource_name": "commons_notes",
+        "resource_type": "datastore_table"
+      },
+      {
+        "permission_ids": [
+          "folder.read"
+        ],
+        "resource_name": "/voices",
+        "resource_type": "folder"
+      },
+      {
+        "permission_ids": [
+          "folder.read"
+        ],
+        "resource_name": "/guides",
+        "resource_type": "folder"
+      },
+      {
+        "permission_ids": [
+          "folder.read"
+        ],
+        "resource_name": "/product-docs",
+        "resource_type": "folder"
+      }
+    ]
+  },
+  "toolsets": [
+    "POD",
+    "USER_INTERACTION",
+    "SPEECH"
+  ],
+  "visibility": "POD"
+}

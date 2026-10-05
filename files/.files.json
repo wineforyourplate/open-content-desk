@@ -1,0 +1,52 @@
+{
+  "files": [
+    {
+      "description": null,
+      "path": "/guides/skill_carousel.md",
+      "search_enabled": true,
+      "visibility": "POD"
+    },
+    {
+      "description": null,
+      "path": "/guides/skill_newsletter.md",
+      "search_enabled": true,
+      "visibility": "POD"
+    },
+    {
+      "description": null,
+      "path": "/guides/skill_reddit.md",
+      "search_enabled": true,
+      "visibility": "POD"
+    },
+    {
+      "description": null,
+      "path": "/guides/skill_thread.md",
+      "search_enabled": true,
+      "visibility": "POD"
+    },
+    {
+      "description": null,
+      "path": "/guides/skill_x_thread.md",
+      "search_enabled": true,
+      "visibility": "POD"
+    },
+    {
+      "description": null,
+      "path": "/voices/voice_clear_operator.md",
+      "search_enabled": true,
+      "visibility": "POD"
+    },
+    {
+      "description": null,
+      "path": "/voices/voice_contrarian_essayist.md",
+      "search_enabled": true,
+      "visibility": "POD"
+    },
+    {
+      "description": null,
+      "path": "/voices/voice_first_principles.md",
+      "search_enabled": true,
+      "visibility": "POD"
+    }
+  ]
+}

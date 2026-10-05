@@ -1,0 +1,85 @@
+{
+  "agent_runtime": null,
+  "description": "Writer \u2014 OCD's content co-pilot. Turns a saved idea into grounded, platform-native drafts (X threads, Reddit posts, and more), loading the matching style skill on demand. Suggests and flags; the owner approves and publishes.",
+  "icon_url": null,
+  "input_schema": null,
+  "instruction": {
+    "$file": "instruction.md"
+  },
+  "metadata": null,
+  "name": "writer",
+  "output_schema": null,
+  "permissions": {
+    "grants": [
+      {
+        "permission_ids": [
+          "datastore.record.read",
+          "datastore.table.read"
+        ],
+        "resource_name": "context_profile",
+        "resource_type": "datastore_table"
+      },
+      {
+        "permission_ids": [
+          "datastore.record.read",
+          "datastore.table.read"
+        ],
+        "resource_name": "skills",
+        "resource_type": "datastore_table"
+      },
+      {
+        "permission_ids": [
+          "datastore.record.read",
+          "datastore.table.read"
+        ],
+        "resource_name": "products",
+        "resource_type": "datastore_table"
+      },
+      {
+        "permission_ids": [
+          "datastore.record.read",
+          "datastore.record.write",
+          "datastore.table.read"
+        ],
+        "resource_name": "posts",
+        "resource_type": "datastore_table"
+      },
+      {
+        "permission_ids": [
+          "folder.read"
+        ],
+        "resource_name": "/voices",
+        "resource_type": "folder"
+      },
+      {
+        "permission_ids": [
+          "folder.read"
+        ],
+        "resource_name": "/guides",
+        "resource_type": "folder"
+      },
+      {
+        "permission_ids": [
+          "folder.read"
+        ],
+        "resource_name": "/product-docs",
+        "resource_type": "folder"
+      },
+      {
+        "permission_ids": [
+          "function.execute",
+          "function.read"
+        ],
+        "resource_name": "save_post",
+        "resource_type": "function"
+      }
+    ]
+  },
+  "toolsets": [
+    "POD",
+    "SKILLS",
+    "USER_INTERACTION",
+    "SPEECH"
+  ],
+  "visibility": "POD"
+}

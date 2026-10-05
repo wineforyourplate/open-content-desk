@@ -1,0 +1,46 @@
+{
+  "profile_name": "Lemma content operations",
+  "status": "active",
+  "version": 1,
+  "founder_json": {
+    "name": "Lemma content owner",
+    "role": "Content owner",
+    "company": "Lemma",
+    "audience": "founder-led teams, operators, content teams, creators, and brand leads replacing scattered content workflows with one grounded operating loop",
+    "topics": ["AI agents", "operator workflows", "pod-based software", "content operations", "building in public"],
+    "audience_signals": [
+      "They are skeptical of generic AI writing tools.",
+      "They care about real workflow ownership, not demos.",
+      "They want concrete examples of how pods replace scattered tools.",
+      "They respond to strong product beliefs backed by shipped proof."
+    ],
+    "tone_preferences": ["plainspoken", "specific", "builder-led", "confident"],
+    "avoid": ["generic AI hype", "celebrity voice mimicry", "unsupported metrics"]
+  },
+  "product_json": {
+    "product_name": "Lemma",
+    "one_line_description": "Lemma lets teams build pods: AI-native operating systems with data, files, agents, workflows, integrations, and apps in one workspace.",
+    "target_users": ["founder-led teams", "operators", "content teams", "creators", "service businesses"],
+    "key_use_cases": ["content workflows", "support operations", "brand storytelling", "nutrition coaching", "product data cleanup"],
+    "features": ["tables", "files", "functions", "agents", "workflows", "schedules", "integrations", "surfaces", "apps"],
+    "allowed_claims": [
+      "A Lemma pod packages data, documents, automation, AI agents, and UI inside one permission boundary.",
+      "Pods are built as local directory bundles and imported progressively.",
+      "One pod can replace a scattered stack of point tools for a focused operating loop.",
+      "Lemma apps are custom React workbenches for humans operating the pod.",
+      "Agents and functions have zero access by default and need explicit grants."
+    ],
+    "blocked_claims": [
+      "Lemma auto-posts to social networks in V1.",
+      "Lemma removes the need for human decisions.",
+      "Every company can replace all software with one pod immediately."
+    ],
+    "proof_points": [
+      "LEDflex support workflow is a real pod-style deployment pattern.",
+      "Coach Carter shows Telegram capture, structured tables, functions, and an app working together.",
+      "The Content Pod is being built directory-first with seeded records and phase-by-phase verification.",
+      "The local bundle includes tables, functions, agents, payloads, and desk specs before import."
+    ],
+    "competitors_or_alternatives": ["Zapier", "Airtable", "Notion", "Retool", "custom internal tools", "generic AI chat tools"]
+  }
+}

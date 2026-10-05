@@ -1,0 +1,72 @@
+{
+  "description": "Rocky \u2014 OCD's board manager. Files ideas captured from Telegram/WhatsApp and the desk onto the board, groups related ones, and answers questions about what's saved. Organizes and suggests; never drafts content and never publishes.",
+  "icon_url": null,
+  "input_schema": {},
+  "instruction": {
+    "$file": "instruction.md"
+  },
+  "metadata": null,
+  "name": "rocky",
+  "output_schema": {},
+  "permissions": {
+    "grants": [
+      {
+        "permission_ids": [
+          "datastore.record.read",
+          "datastore.record.write",
+          "datastore.table.read"
+        ],
+        "resource_name": "campaigns",
+        "resource_type": "datastore_table"
+      },
+      {
+        "permission_ids": [
+          "datastore.record.read",
+          "datastore.record.write",
+          "datastore.table.read"
+        ],
+        "resource_name": "products",
+        "resource_type": "datastore_table"
+      },
+      {
+        "permission_ids": [
+          "datastore.record.read",
+          "datastore.table.read"
+        ],
+        "resource_name": "channels",
+        "resource_type": "datastore_table"
+      },
+      {
+        "permission_ids": [
+          "datastore.record.read",
+          "datastore.record.write",
+          "datastore.table.read"
+        ],
+        "resource_name": "posts",
+        "resource_type": "datastore_table"
+      },
+      {
+        "permission_ids": [
+          "folder.read",
+          "folder.write"
+        ],
+        "resource_name": "/notes",
+        "resource_type": "folder"
+      },
+      {
+        "permission_ids": [
+          "function.execute",
+          "function.read"
+        ],
+        "resource_name": "save_post",
+        "resource_type": "function"
+      }
+    ]
+  },
+  "toolsets": [
+    "POD",
+    "USER_INTERACTION",
+    "SPEECH"
+  ],
+  "visibility": "POD"
+}

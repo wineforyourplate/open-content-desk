@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.env
+.env.local
+.env.*.local
+*.tsbuildinfo
+.DS_Store
+.playwright-cli/
+output/
+# pod data never lives in this repo
+data/

@@ -1,0 +1,6 @@
+{
+  "description": null,
+  "name": "campaign-workspace",
+  "public_slug": "${campaign_workspace_slug}",
+  "visibility": "PUBLIC"
+}

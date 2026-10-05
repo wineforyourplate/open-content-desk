@@ -1,0 +1,42 @@
+{
+  "idea": "Why most AI agents are built backwards",
+  "context_mapping": {
+    "allowed_claims": [
+      "Agents and functions have zero access by default and need explicit grants.",
+      "A Lemma pod packages data, documents, automation, AI agents, and UI inside one permission boundary.",
+      "One pod can replace a scattered stack of point tools for a focused operating loop."
+    ],
+    "proof_points": [
+      "The Content Pod is being built directory-first with seeded records and phase-by-phase verification.",
+      "LEDflex support workflow is a real pod-style deployment pattern.",
+      "Coach Carter shows Telegram capture, structured tables, functions, and a desk working together."
+    ],
+    "audience_signals": [
+      "They are skeptical of generic AI writing tools.",
+      "They care about real workflow ownership, not demos.",
+      "They respond to strong product beliefs backed by shipped proof."
+    ]
+  },
+  "perspectives": [
+    {
+      "label": "Contrarian take",
+      "description": "Most agents are designed as chat first, but real work starts with resources and permissions.",
+      "why_it_fits": "The idea already challenges the default way teams think about agents."
+    },
+    {
+      "label": "Practical lesson",
+      "description": "What building pods taught us about why agents need state before personality.",
+      "why_it_fits": "It connects the idea to concrete operating architecture."
+    },
+    {
+      "label": "Pain post",
+      "description": "Teams do not need another chat box; they need an operating loop that does not leak context.",
+      "why_it_fits": "It starts with a pain content owners and operators already recognize."
+    },
+    {
+      "label": "Bold claim",
+      "description": "The operating loop matters more than the interface around it.",
+      "why_it_fits": "It gives the content owner a memorable thesis to test in short-form content."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "code": {
+    "$file": "code.py"
+  },
+  "config": null,
+  "description": "Approve a draft content piece so it appears in the manual publishing queue.",
+  "icon_url": null,
+  "name": "approve_content_piece",
+  "permissions": {
+    "grants": []
+  },
+  "type": "API",
+  "visibility": "POD"
+}

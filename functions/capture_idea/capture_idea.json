@@ -1,0 +1,14 @@
+{
+  "code": {
+    "$file": "code.py"
+  },
+  "config": null,
+  "description": "Validate a raw content idea, infer a lightweight topic, and create a New idea record for the Board.",
+  "icon_url": null,
+  "name": "capture_idea",
+  "permissions": {
+    "grants": []
+  },
+  "type": "API",
+  "visibility": "POD"
+}

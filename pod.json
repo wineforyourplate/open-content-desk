@@ -1,0 +1,27 @@
+{
+  "contents": {},
+  "description": "Open Content Desk — capture rough ideas, shape them into platform-native posts (X threads, Reddit, newsletters), and run content campaigns with AI agents.",
+  "format_version": 3,
+  "icon_url": null,
+  "name": "Open Content Desk",
+  "variables": {
+    "ai_at_work_slug": {
+      "default": "ai-at-work",
+      "description": "Public URL slug for app 'ai-at-work' (unique platform-wide; a suffix is added on collision)",
+      "source_value": "ai-at-work",
+      "type": "app_slug"
+    },
+    "campaign_workspace_slug": {
+      "default": "campaign-workspace",
+      "description": "Public URL slug for app 'campaign-workspace' (unique platform-wide; a suffix is added on collision)",
+      "source_value": "campaign-workspace",
+      "type": "app_slug"
+    },
+    "ocd_board_slug": {
+      "default": "ocd-board",
+      "description": "Public URL slug for app 'ocd-board' (unique platform-wide; a suffix is added on collision)",
+      "source_value": "ocd-board",
+      "type": "app_slug"
+    }
+  }
+}
