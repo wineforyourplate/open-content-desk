@@ -114,12 +114,17 @@ The button opens Lemma's import flow for this exact repository:
 https://lemma.work/import/github/wineforyourplate/open-content-desk
 ```
 
-After import, run the bootstrap script once to upload the writing guides and voice
-profiles:
+After import, run the bootstrap script once from a clone of this repo. It finishes the
+parts the frontend import leaves undone: creates the folders, uploads the writing guides
+and voice profiles, restores the agents' and functions' permissions, and builds and
+deploys `ocd-board`:
 
 ```bash
+git clone https://github.com/wineforyourplate/open-content-desk.git && cd open-content-desk
 bash scripts/bootstrap-files.sh --pod <pod-id>
 ```
+
+It needs an authenticated Lemma CLI, `python3`, and Node.js with npm. It is safe to re-run.
 
 Then add a `context_profile` row — who you are, what you sell, who you write for — so
 the Writer has something to ground drafts in. `payloads/context-profile.seed.json` is a
