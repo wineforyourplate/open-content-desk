@@ -52,7 +52,7 @@ Capture an idea where it finds you. Shape it at your desk when you're ready to w
 </table>
 
 <p align="center">
-  <sub>The web app ships with the pod. WhatsApp and email are connected per deployment.</sub>
+  <sub>The web app ships with the pod. WhatsApp and email are added after install — see <a href="#optional-front-doors">Optional front doors</a>.</sub>
 </p>
 
 ## The spark dies before the draft does
@@ -154,9 +154,18 @@ App URL slugs are variables in `pod.json` (`ocd_board_slug`, `campaign_workspace
 
 ### Optional front doors
 
-Connect WhatsApp or email (Resend) in the target organisation and point the surface at
-Rocky. Connector accounts are environment-specific and intentionally do not travel with a
-public repository.
+WhatsApp and email are not part of the import: Lemma's system WhatsApp and email
+credentials can serve only one pod per organisation, and connector accounts are
+environment-specific. Add them after install, pointed at Rocky:
+
+```bash
+lemma --pod <pod-id> surfaces upsert WHATSAPP --agent rocky --credential-mode SYSTEM --enabled
+lemma --pod <pod-id> surfaces upsert RESEND --agent rocky --credential-mode SYSTEM --enabled
+```
+
+If another pod in the organisation already uses the system credentials, delete that
+surface first (`lemma --pod <other-pod> surfaces delete WHATSAPP`) or use
+`--credential-mode CUSTOM` with your own account.
 
 ## How Open Content Desk works
 
@@ -194,7 +203,6 @@ This repository is the complete Lemma pod, not just an app:
 | Tables | Private posts, campaigns, products, and profile; shared Commons boards, members, and notes |
 | Functions | `save_post` (the one write path that keeps `/notes` in sync) plus draft and claim-check helpers |
 | Files | Per-format writing guides (`/guides`) and voice profiles (`/voices`); `/notes` and `/product-docs` are created empty |
-| Surfaces | WhatsApp and email, ready to connect |
 
 The important design choice: **every post is also a searchable note.** `save_post` and the
 app both mirror a post to `/notes/<id>.md`, with one section per platform version, so
